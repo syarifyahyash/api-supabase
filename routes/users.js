@@ -13,10 +13,10 @@ const router = require('express').Router();
 
 // const upload = multer({ storage: diskStorage });
 
-router.post('/user', addUser);
-router.get('/user', getAllUsers);
-router.get('/user/:id', getUserById);
-router.put('/user/:id', updateUser);
-router.delete('/user/:id', deleteUser);
+router.post('/users', addUser);
+router.get('/users', getAllUsers);
+router.get('/users/:id', getUserById);
+router.put('/users/:id', updateUser);
+router.delete('/users/:id', deleteUser);
 
 module.exports = router;
