@@ -22,6 +22,6 @@ app.listen(PORT, HOST, () => {
 app.get('/', (_req, res) => {
   res.json({
     status: 'success',
-    message: 'Selamat Datang di Travelin API!',
+    message: 'Welcome to API x Supabase!',
   });
 });

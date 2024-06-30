@@ -9,25 +9,19 @@ generator client {
 }
 
 datasource db {
-  provider = "mysql"
-  url      = env("DATABASE_URL")
+  provider  = "postgresql"
+  url       = env("DATABASE_URL")
+  directUrl = env("DIRECT_URL")
 }
 
-model Culture {
-  id          Int  @id @default(autoincrement())
-  name        String @db.VarChar(100)
-  description String @db.Text
-  province    String @db.VarChar(50)
-  address     String @db.VarChar(50)
-  image       String? @db.Text
+model User {
+  id     Int    @id @default(autoincrement())
+  name   String @db.VarChar(50)
+  gender gender
+  email  String @unique @db.VarChar(60)
 }
 
-model Tour {
-  id          Int  @id @default(autoincrement())
-  name        String @db.VarChar(100)
-  description String @db.Text
-  province    String @db.VarChar(50)
-  address     String @db.VarChar(50)
-  image       String? @db.Text
-  map	      String? @db.Text
+enum gender {
+  male
+  female
 }

@@ -1,6 +1,6 @@
-# Travelin API
+# API x Supabase
 
-Travelin API adalah API untuk mengelola data budaya dan pariwisata menggunakan Express.js dan ORM Prisma
+API x Supabase adalah API untuk mengelola data user menggunakan Express.js, ORM Prisma dan Supabase sebagai database.
 
 * [Persyaratan](#persyaratan)
 * [Instalasi](#instalasi)

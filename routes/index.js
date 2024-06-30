@@ -1,8 +1,6 @@
 const router = require('express').Router();
-const cultures = require('./cultures');
-const tours = require('./tours');
+const users = require('./users');
 
-router.use('/', cultures);
-router.use('/', tours);
+router.use('/', users);
 
 module.exports = router;
